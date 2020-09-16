@@ -1,0 +1,10 @@
+package com.training;
+
+public class vehicleInsurance extends Insurance {
+
+	public vehicleInsurance(int policyNumber, String policyHolderName, int policyHolderAge, double insuredAmount) {
+		super(policyNumber, policyHolderName, policyHolderAge, insuredAmount);
+		// TODO Auto-generated constructor stub
+	}
+
+}
