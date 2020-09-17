@@ -6,7 +6,7 @@ import com.training.ifaces2.Rent;
 
 
 public class RentalShop {
-
+	int quantity, days;
 public Rent getProduct(int key) {
 		
 		switch (key) {
@@ -24,7 +24,7 @@ public Rent getProduct(int key) {
 	}
 public void printRent(Rent product) {
 	
-	int quantity, days;
+	
 	Scanner sc = new Scanner(System.in);
 	
 	
