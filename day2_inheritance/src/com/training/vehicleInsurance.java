@@ -1,16 +1,16 @@
 package com.training;
 
-public class vehicleInsurance extends Insurance {
+public class VehicleInsurance extends Insurance {
 
 	private String vehicleModel;
 	private int costOfManufacture;
 	private int yearOfManufacture;
 	
-	public vehicleInsurance(int policyNumber, String policyHolderName, int policyHolderAge, double insuredAmount) {
+	public VehicleInsurance(int policyNumber, String policyHolderName, int policyHolderAge, double insuredAmount) {
 		super(policyNumber, policyHolderName, policyHolderAge, insuredAmount);
 		// TODO Auto-generated constructor stub
 	}
-	public vehicleInsurance(int policyNumber, String policyHolderName, int policyHolderAge, double insuredAmount,
+	public VehicleInsurance(int policyNumber, String policyHolderName, int policyHolderAge, double insuredAmount,
 			String vehicleModel, int costOfManufacture, int yearOfManufacture) {
 		super(policyNumber, policyHolderName, policyHolderAge, insuredAmount);
 		this.vehicleModel = vehicleModel;

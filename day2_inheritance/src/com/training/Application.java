@@ -12,11 +12,16 @@ public class Application {
 		
 		System.out.println("Premium is" + premium);
 		
-		vehicleInsurance audi = new vehicleInsurance(102,"Mark",36,50000.0,"Two",300000,2021);
+		VehicleInsurance audi = new VehicleInsurance(102,"Mark",36,50000.0,"Two",300000,2021);
+		premium = audi.calulatePremium();
+		
+		VehicleInsurance bmw = new VehicleInsurance(103,"Ramesh",46,30000.0,"Two",600000,2022);
+		VehicleInsurance pulsar = new VehicleInsurance(201,"Steve",26,20000.0,"Two",200000,2023);
+		VehicleInsurance ktm = new VehicleInsurance(202,"Sameer",33,70000.0,"Two",100000,2029);
 		
 		premium = audi.calulatePremium();
 		
-		System.out.println("Premium is" + premium);
+		System.out.println("model number is"+audi.getVehicleModel()+"Premium is" + premium);
 	}
 	
 	
