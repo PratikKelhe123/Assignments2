@@ -8,25 +8,30 @@ public class Application {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int choice;
+		double total = 0.0;
 		
 		Scanner sc = new Scanner(System.in);
 		
+		do {
 		System.out.println("Please choose either 1.Computer 2.Furniture");
 		
-		int choice = sc.nextInt();
+		 choice = sc.nextInt();
 		
 		RentalShop saiKrupa = new RentalShop();
 		
 		Rent selected = saiKrupa.getProduct(choice);
 		
-		saiKrupa.printRent(selected);
+		total = saiKrupa.printRent(selected);
 		
-//		Rent selected = saiKrupa
+		System.out.println("Press 0 to terminate or 1 for coninue");
 		
+		choice = sc.nextInt();
 		
-		sc.close();
+		}while(choice != 0);
+		
+
 		
 
 	}
-
-}
+	

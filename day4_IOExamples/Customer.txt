@@ -1,0 +1,4 @@
+Customer [customerid=123, customerName=Ramesh, mobileNumber=94949, email=ram@abc.com]
+Customer [customerid=123, customerName=Ragesh, mobileNumber=94949, email=ram@abc.com]
+Customer [customerid=123, customerName=Ragesh, mobileNumber=94949, email=ram@abc.com]
+Customer [customerid=123, customerName=Ragesh, mobileNumber=94949, email=ram@abc.com]

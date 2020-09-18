@@ -15,6 +15,10 @@ public class Application {
 		
 		bill.printFees(rajesh);
 
+		WrapperAndStatic obj = new WrapperAndStatic();
+		
+		obj.parse("44");
+		obj.useValueOf();
 	}
 
 }

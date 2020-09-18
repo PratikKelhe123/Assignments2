@@ -5,13 +5,15 @@ import java.util.Scanner;
 import com.training.ifaces2.Rent;
 
 
+
+
 public class RentalShop {
+	
 	int quantity, days;
 public Rent getProduct(int key) {
 		
 		switch (key) {
 		case 1:
-			
 			return new Computers();
 
 		case 2:
@@ -21,9 +23,11 @@ public Rent getProduct(int key) {
 			return null;
 		}
 		
+		
 	}
-public void printRent(Rent product) {
+public double printRent(Rent product) {
 	
+	double rent;
 	
 	Scanner sc = new Scanner(System.in);
 	
@@ -35,8 +39,11 @@ public void printRent(Rent product) {
 	days = sc.nextInt();
 	System.out.println(product.APPNAME);
 	System.out.println(product.getName());
-	System.out.println(product.getRent(quantity,days));
+	rent = product.getRent(quantity,days);
+	System.out.println(rent);
 	
-	sc.close();
+//	sc.close();
+	
+	return rent;
 }
 }
